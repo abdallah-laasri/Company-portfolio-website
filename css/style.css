@@ -1,0 +1,637 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  /* font-size: 16px; */
+  /* background-image: url("../images/bg.jpg");
+	background-attachment: fixed;
+	background-size: 100% 120%;
+	background-repeat: no-repeat; */
+
+  /* background-position: 100%; */
+  /* width:100% ; */
+}
+
+.topHeader {
+  background-color: rgb(223, 223, 223);
+  display: flex;
+  justify-content: center;
+  padding: 5px 0px 12px 0px;
+  width: 100%;
+}
+
+.topHeader1 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.topHeader2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.topHeader1 a {
+  color: rgb(43, 42, 42);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.topHeader1 i {
+  color: rgb(43, 42, 42);
+  font-size: 13px;
+  padding: 0px 0px 4px 18px;
+}
+
+.topHeader2 i {
+  color: rgb(43, 42, 42);
+  font-size: 13px;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 550px) {
+  .topHeader {
+    flex-direction: column;
+  }
+}
+
+.navbar-container {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  padding: 23px;
+}
+
+.navbar {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.navbar a,
+.brand a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a {
+  padding-left: 25px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.brand a {
+  font-weight: bold;
+}
+
+#myicon {
+  display: none;
+  position: absolute;
+  right: 12px;
+  top: 70px;
+}
+
+@media screen and (max-width: 900px) {
+  /* .navbar-container {flex-direction: column }; */
+  .navbar {
+    display: none;
+  }
+
+  #myicon {
+    display: block;
+  }
+}
+
+.mystyle {
+  display: block;
+  flex-direction: column;
+}
+
+.container {
+  flex-direction: column;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -2;
+  background-image: url("../images/bg2.jpg");
+  background-size: 100% 120%;
+  background-attachment: fixed;
+}
+
+.black {
+  background-color: rgba(27, 25, 25, 0.795);
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 600px;
+  /* position: relative; */
+}
+
+.meta {
+  text-align: center;
+  padding-top: 10%;
+}
+
+header .meta h1 {
+  color: rgb(255, 255, 255);
+  font-size: 2.5em;
+}
+
+header .meta p {
+  color: rgb(255, 255, 255);
+  padding-top: 5%;
+  text-transform: uppercase;
+}
+
+.btn1 {
+  background-color: rgb(30, 30, 180);
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 5%;
+}
+.btn1 > a {
+  color: white;
+  text-decoration: none;
+}
+
+.about {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.about p {
+  padding-top: 30px;
+  padding: 5%;
+  text-align: left;
+  line-height: 35px;
+  text-indent: 50px;
+}
+
+.about h1 {
+}
+
+.about-inside {
+  padding: 60px 100px;
+}
+
+.works-container {
+  background-color: rgb(223, 223, 223);
+}
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.works div {
+  padding: 15px 25px;
+  width: 33%;
+}
+
+.works div img {
+  transition: 0.2s;
+  width: 100%;
+}
+
+.works div img:hover {
+  transform: scale(1.09);
+}
+
+.works-container .works-inside h1 {
+}
+
+.works-inside {
+  padding: 60px 100px;
+}
+
+/* start of client section */
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #fffffff1;
+  width: 96%;
+  margin: auto;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  font-size: 40px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  /* background: #ddd; */
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: cornflowerblue;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/******************************************************************* end of client section */
+
+@media screen and (max-width: 900px) {
+  .works-container {
+    padding: 12px;
+  }
+
+  .works {
+    padding: 0 12px;
+  }
+
+  .works div {
+    width: 40%;
+    padding: 10px 12px;
+  }
+
+  .works-inside {
+    padding: 0;
+  }
+
+  .about-inside h1 {
+    text-align: center;
+  }
+
+  .works-container .works-inside h1,
+  .client-container h1 {
+    padding: 5% 0;
+    text-align: center;
+  }
+
+  .meta .btn1 {
+    margin-top: 10%;
+  }
+
+  .meta {
+    padding-top: 20%;
+  }
+
+  .meta p {
+    margin-top: 7%;
+  }
+
+  footer {
+    flex-direction: column-reverse;
+  }
+
+  .container-contact form {
+    width: 100%;
+  }
+  .contact {
+    padding: 60px 1px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .works div {
+    width: 100%;
+  }
+
+  .works-container {
+    padding: 12px;
+  }
+
+  .works {
+    padding: 0 12px;
+  }
+
+  .about-inside {
+    padding: 10%;
+    font-size: 16px;
+  }
+
+  .about-inside h1 {
+    text-align: center;
+  }
+
+  .works-container .works-inside h1,
+  .client-container h1 {
+    text-align: center;
+    font-size: 1em;
+    padding: 5% 0;
+  }
+  .mySlides > q {
+    font-size: 16px;
+  }
+
+  .meta .btn1 {
+    margin-top: 20%;
+  }
+
+  footer {
+    flex-direction: column-reverse;
+  }
+
+  footer > div {
+    margin-top: 30px;
+  }
+}
+
+/******************************************************************** start footer style */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #2d303a;
+  padding: 40px 0;
+}
+
+footer > div {
+  flex: 50%;
+  color: rgb(163, 163, 162);
+  font-size: 16px;
+  text-align: center;
+}
+
+footer .div2 a {
+  border: 2px solid #f5f4f2;
+  border-radius: 4px;
+  color: #f5f4f2;
+  padding: 8px 14px;
+  margin-bottom: 12px;
+}
+
+/********************************************************************** end of footer style */
+
+.picture {
+  width: 130px;
+  height: 130px;
+  display: inline-block;
+}
+
+.picture img {
+  width: 100%;
+}
+/*----------------------------------------
+Pre Loader
+----------------------------------------*/
+.loader-con {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fdfdfd;
+  z-index: 99;
+}
+.loader-con .spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+}
+.double-bounce1,
+.double-bounce2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-animation: sk-bounce 2s infinite ease-in-out;
+  -moz-animation: sk-bounce 2s infinite ease-in-out;
+  animation: sk-bounce 2s infinite ease-in-out;
+}
+.double-bounce2 {
+  -webkit-animation-delay: -1s;
+  -moz-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+@keyframes sk-bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* start contact  */
+
+.contact {
+  padding: 60px 100px;
+  background: rgb(223, 223, 223);
+}
+.container-contact {
+  width: 85%;
+  text-align: center;
+  margin: auto;
+}
+.container-contact form {
+  margin-top: 60px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#name,
+#email,
+#subject,
+#submit,
+textarea {
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #8c8c8c;
+}
+form .form-input {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+form .form-input > div {
+  width: 49%;
+}
+#name,
+#email {
+  width: 100%;
+}
+#subject {
+  width: 100%;
+}
+textarea {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  background-color: #ccc;
+}
+#submit {
+  /* width: 40%; */
+  padding: 10px 20px;
+  background-color: rgb(39, 39, 39);
+  margin: auto;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.errors {
+  display: flex;
+}
+.error {
+  width: 100%;
+  font-size: 12px;
+  color: red;
+}
+
+@media screen and (max-width: 650px) {
+  form .form-input > div {
+    width: 100%;
+  }
+  #submit {
+    width: 50%;
+  }
+  #name,
+  #email,
+  #submit,
+  textarea {
+    padding: 12px;
+  }
+  .container-contact form {
+    width: 100%;
+  }
+  .contact {
+    padding: 60px 1px;
+  }
+}
+/* end contact */
+
+/* start scrollUp */
+.scrollUp {
+  width: 46px;
+  height: 46px;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  background-color: rgb(43, 43, 43);
+  z-index: 10;
+  text-align: center;
+  border: 2px solid rgb(43, 43, 43);
+  color: #fff;
+  font-size: 1.3em;
+  transform: rotate(-90deg);
+  cursor: pointer;
+}
+.scrollUp:hover {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(43, 43, 43);
+  color: rgb(24, 24, 24);
+}
+.hideIt {
+  display: none;
+}
+.scrollUp a {
+  color: white;
+  text-decoration: none;
+  line-height: 0.7;
+  font-size: xx-large;
+}
+.scrollUp a:hover {
+  color: #000000;
+}
+/* end scrollUp */

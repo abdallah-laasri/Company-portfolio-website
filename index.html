@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="shortcut icon" href="images/j2.ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>company portfolio</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:700%7cRaleway:300,500,700"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body onload="stopSpiner()">
+    <!-- Loader -->
+    <div class="loader-con">
+      <div class="spinner center">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>
+    <!-- End Loader -->
+
+    <!--    top contact items-->
+    <div class="topHeader" id="topHeader">
+      <div class="topHeader1">
+        <div>
+          <i class="fa fa-mobile-phone"></i
+          ><a href="tel:+212662226685">+2126 62 22 66 85</a>
+        </div>
+        <div>
+          <i class="fa fa-envelope-o"></i>
+          <a href="mailto:COMPANY-NAME@mail.com"
+            >Email: COMPANY-NAME@mail.com</a
+          >
+        </div>
+      </div>
+      <div class="topHeader2">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <!--   navigation bar -->
+    <div class="navbar-container">
+      <div class="brand"><a href="#">COMPANY NAME</a></div>
+      <span id="myicon" class="fa fa-bars" onclick="showNavbar()"></span>
+      <div class="navbar">
+        <div><a style="color:blue;" href="#top">Accueil</a></div>
+        <div><a href="#apropos">A propos</a></div>
+        <div><a href="#projects">Projets</a></div>
+        <div><a href="#client">Cliens</a></div>
+        <div><a href="#contact">Contact</a></div>
+      </div>
+    </div>
+    <!-- -------------------------------------------------->
+    <!-- background -->
+    <div class="bg"></div>
+    <!----------------------------------------------------->
+
+    <!-- header -->
+    <header id="top">
+      <div class="black"></div>
+      <div class="meta">
+        <h1>COMPANY NAME</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        <button class="btn1">
+          <a href="#contact">Contactez Nous</a>
+        </button>
+      </div>
+    </header>
+    <!-- -------------------------------------------------->
+    <!-- About -->
+    <section class="about" id="apropos">
+      <div class="about-inside">
+        <h1>Qui somme-nous :</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+          consectetur amet molestiae debitis tempore? Autem obcaecati eveniet
+          nihil exercitationem tenetur enim quasi, nemo eligendi officia
+          voluptatibus? Nobis voluptas repellat provident Lorem ipsum dolor sit
+          amet, consectetur adipisicing elit. Quia, quidem asperiores cumque
+          debitis deleniti aliquam, veniam ducimus nihil officia corporis
+          quaerat minima, atque harum animi. Eum soluta nesciunt officiis sequi.
+        </p>
+      </div>
+    </section>
+    <!----------------------------------------------------->
+    <!-- works -->
+    <section class="works-container" id="projects">
+      <div class="works-inside">
+        <h1>Notre projets :</h1>
+        <div class="works">
+          <div><img src="images/bg.jpg" alt="" /></div>
+          <div><img src="images/t6.jpg" alt="" /></div>
+          <div><img src="images/t4.jpg" alt="" /></div>
+          <div><img src="images/t3.jpg" alt="" /></div>
+          <div><img src="images/t2.jpg" alt="" /></div>
+          <div><img src="images/t5.jpg" alt="" /></div>
+        </div>
+      </div>
+    </section>
+    <!----------------------------------------------------->
+
+    <!-- start of testimonial section -->
+    <section class="client" id="client">
+      <div class="slideshow-container">
+        <div class="mySlides">
+          <div>
+            <span class="picture"><img src="images/avatar1.png"/></span>
+          </div>
+          <div>
+            <!-- <span class="name">firsname lastname1</span> -->
+            <p class="author">- John Keats -</p>
+          </div>
+
+          <q
+            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit,
+            eum, laborum quae quia ipsum quidem praesentium ipsam minima ipsa
+            exercitationem quos aliquam sint animi suscipit placeat. Ratione
+            dolorem praesentium ipsam minima ipsa exercitationem quos aliquam
+            sint animi porro numquam!</q
+          >
+        </div>
+
+        <div class="mySlides">
+          <div>
+            <span class="picture"><img src="images/avatar5.png"/></span>
+          </div>
+          <div>
+            <!-- <span class="name">firsname lastname2</span> -->
+            <p class="author">- Ernest Hemingway -</p>
+          </div>
+          <q
+            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit,
+            eum, laborum quae quia ipsum quidem praesentium ipsam minima ipsa
+            exercitationem quos aliquam sint animi suscipit placeat. Ratione
+            dolorem praesentium ipsam minima ipsa exercitationem quos aliquam
+            sint animi porro numquam!</q
+          >
+        </div>
+
+        <div class="mySlides">
+          <div>
+            <span class="picture"><img src="images/avatar6.png"/></span>
+          </div>
+          <div>
+            <!-- <span class="name">firsname lastname3</span> -->
+            <p class="author">- Thomas A. Edison -</p>
+          </div>
+          <q
+            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit,
+            eum, laborum quae quia ipsum quidem praesentium ipsam minima ipsa
+            exercitationem quos aliquam sint animi suscipit placeat. Ratione
+            dolorem praesentium ipsam minima ipsa exercitationem quos aliquam
+            sint animi porro numquam!</q
+          >
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+    <!-- end of testimonial section -->
+
+    <!-- start contact -->
+
+    <section id="contact" class="contact">
+      <div class="container-contact">
+        <h1 class="section-header">Contactez Nous</h1>
+        <form name="myForm">
+          <div class="form-input">
+            <div>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Votre Name"
+              />
+              <div class="error"></div>
+            </div>
+            <div>
+              <input
+                id="email"
+                type="text"
+                name="email"
+                placeholder="Votre Email"
+              />
+              <div class="error"></div>
+            </div>
+          </div>
+          <textarea name="textarea" placeholder="Votre Message"></textarea>
+          <input id="submit" type="submit" value="Envoyer Message" />
+        </form>
+      </div>
+    </section>
+
+    <!-- end contact -->
+
+    <!-- ------------------------------------------------ -->
+    <footer>
+      <div class="div1">
+        <p>COMPANY NAME &copy; 2019. All rights reserved.</p>
+      </div>
+
+      <div class="div2">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </footer>
+
+    <div class="scrollUp"><a href="#topHeader">></a></div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+
+      const x = document.getElementsByClassName("scrollUp")[0];
+      window.addEventListener("scroll", function() {
+        let pos = document.scrollingElement.scrollTop;
+        if (pos === 0) {
+          x.classList.add("hideIt");
+        } else {
+          x.classList.remove("hideIt");
+        }
+      });
+    </script>
+  </body>
+</html>
